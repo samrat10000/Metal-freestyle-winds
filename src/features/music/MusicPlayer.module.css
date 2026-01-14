@@ -1,0 +1,201 @@
+.playerWindow {
+    border: 2px solid #8e7cc3;
+    /* Lavender border */
+    background: #fdf0ff;
+    /* Light pink/lavender bg */
+    width: 100%;
+    max-width: 600px;
+    font-family: 'VT323', monospace;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 0px rgba(142, 124, 195, 0.4);
+    margin: 0 auto;
+}
+
+.titleBar {
+    background: #8e7cc3;
+    color: white;
+    padding: 2px 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    height: 24px;
+}
+
+.titleText {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.windowControls {
+    display: flex;
+    gap: 2px;
+}
+
+.winBtn {
+    width: 23px;
+    height: 23px;
+    border: 1px solid white;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: var(--custom-pointer);
+}
+
+.content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.trackInfo {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.albumArt {
+    width: 64px;
+    height: 64px;
+    background: #d4c1ec;
+    border: 2px solid #8e7cc3;
+    image-rendering: pixelated;
+    object-fit: cover;
+}
+
+.details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.songName {
+    font-size: 1.1rem;
+    color: #584a7e;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.artistName {
+    font-size: 1rem;
+    color: #8e7cc3;
+    margin-bottom: 6px;
+}
+
+/* Progress Bar */
+.progressContainer {
+    width: 100%;
+    height: 12px;
+    background: #eeddff;
+    position: relative;
+    cursor: var(--custom-pointer);
+    margin: 5px 0;
+}
+
+.progressBar {
+    height: 100%;
+    background: #8e7cc3;
+    width: 0%;
+    /* Dynamic */
+    position: relative;
+}
+
+.progressHandle {
+    width: 8px;
+    height: 100%;
+    background: #584a7e;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Controls Row */
+.controlsRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.mainControls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.controlBtn {
+    background: none;
+    border: none;
+    cursor: var(--custom-pointer);
+    color: #584a7e;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controlBtn svg {
+    width: 40px;
+    height: 40px;
+    fill: currentColor;
+}
+
+/* css for trip Btn yaaa */
+
+.tripBtn {
+    font-family: 'VT323', monospace;
+    letter-spacing: 2px;
+    background-color: #120018;
+    color: #ffb3ff;
+    border: 2px dashed #b450ff;
+    padding: 0px 2px;
+    margin-left: 8px;
+
+    text-shadow:
+        0 0 4px rgba(255, 180, 255, 0.7);
+
+}
+
+.tripBtn:hover {
+    background: #1d0026;
+    color: #ffffff;
+
+
+}
+
+
+.timeDisplay {
+    font-size: 1.1rem;
+    color: #584a7e;
+}
+
+.volumeContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 80px;
+}
+
+.volumeSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #eeddff;
+    outline: none;
+}
+
+.volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background: #8e7cc3;
+    cursor: var(--custom-pointer);
+    border: none;
+}

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Pirata+One&family=UnifrakturMaguntia&family=VT323&display=swap');
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border: 1px solid #8e7cc3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8e7cc3;
+  border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #584a7e;
+}
+
+:root {
+  font-family: 'Times New Roman', serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  /* background-color: #e0e0e0; */
+  background-image: url('/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+
+
+  /* Desktop background color */
+
+  --custom-cursor: url('/metal_guitar_cursor_final.png') 30 20, auto;
+  --custom-pointer: url('/metal_guitar_cursor_final.png') 30 20, pointer;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* CRT Scanline Effect */
+.crt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%,
+      rgba(0, 0, 0, 0.05) 50%);
+  background-size: 100% 3px;
+  z-index: 10000;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.crt-shimmer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.02);
+  z-index: 9999;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0.1;
+  }
+}
+
+/* Pointer elements - catching everything interactive */
+/* We target standard elements AND common naming patterns in CSS modules */
+*,
+a,
+button,
+[role="button"],
+input,
+select,
+textarea,
+[class*="Btn"],
+[class*="btn"],
+[class*="Button"],
+[class*="button"],
+[class*="Control"],
+[class*="control"],
+[class*="iconContainer"],
+[class*="winBtn"],
+[class*="controlBtn"],
+li,
+span,
+div[onClick] {
+  cursor: url('/metal_guitar_cursor_final.png') 30 20, pointer !important;
+}
+
+/* Ensure the default arrow is also the guitar */
+html,
+body {
+  cursor: url('/metal_guitar_cursor_final.png') 30 20, auto !important;
+}
+
+/* Ensure body still has it as base */
+body {
+  margin: 0;
+  display: block;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.glitter-text {
+  background: linear-gradient(90deg,
+      #8e7cc3, #ffd1dc, #b450ff, #8e7cc3);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
+  display: inline-block;
+  font-weight: bold;
+}
+
+@keyframes shine {
+  to {
+    background-position: 300%;
+  }
+}

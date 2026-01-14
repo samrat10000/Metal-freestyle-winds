@@ -1,0 +1,40 @@
+/* Container for the notebook content */
+.notebookContainer {
+    font-family: VT323;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #e6e0ff;
+    background: linear-gradient(180deg, #1a1626 0%, #0f0c1a 100%);
+    padding: 12px;
+    border-radius: 4px;
+    max-height: 400px;
+    overflow-y: auto;
+
+}
+
+/* The list itself */
+.notesList {
+    padding-left: 20px;
+    margin: 0;
+    list-style: none;
+}
+
+.noteItem {
+    margin-bottom: 14px;
+    padding-left: 18px;
+    position: relative;
+    border-left: 3px solid #8e7cc3;
+    padding: 8px 12px;
+    background: rgba(142, 124, 195, 0.05);
+    /* transition: all 0.2s ease; */
+
+
+
+
+}
+
+.noteItem:hover {
+    background: rgba(142, 124, 195, 0.15);
+    border-left-color: #b450ff;
+    transform: translateX(1px);
+}

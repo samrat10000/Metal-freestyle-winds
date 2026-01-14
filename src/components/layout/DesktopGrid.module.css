@@ -1,0 +1,99 @@
+.desktopContainer {
+    display: grid;
+    grid-template-columns: 450px 1fr 450px;
+    gap: 1rem;
+    padding: 1rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif;
+    background-color: transparent;
+}
+
+/* Header spanning all columns */
+.header {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.headerLogo {
+    display: block;
+    margin: 0 auto 2rem auto;
+    max-width: 100%;
+    height: auto;
+    width: 1000px;
+    /* Adjust based on image aspect ratio */
+
+    /* Optional: maintain the crisp pixel look if the image is low-res */
+    image-rendering: -webkit-optimize-contrast;
+
+    filter:
+        drop-shadow(0 0 18px rgba(180, 80, 255, 0.45)) drop-shadow(0 0 36px rgba(255, 60, 120, 0.35));
+
+
+}
+
+/* Responsiveness: Stack on smaller screens */
+@media (max-width: 900px) {
+    .desktopContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* container to center the buttons
+ */
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+
+.navButton {
+    background: #e0e0e0;
+    border: 2px solid #fff;
+    border-right-color: #404040;
+    border-bottom-color: #404040;
+    color: black;
+    font-family: 'Courier New', monospace;
+    font-size: 1.4rem;
+    padding: 8px 20px;
+    cursor: var(--custom-pointer);
+    font-weight: bold;
+}
+
+.navButton:active {
+    border: 2px solid #404040;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    transform: translate(1px, 1px);
+
+}
+
+.guitarDecorLeft {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 469px;
+    height: auto;
+    transform: rotate(-15deg);
+    z-index: 5;
+    opacity: 0.9;
+    pointer-events: none;
+
+}
+
+.guitarDecorRight {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    width: 469px;
+    height: auto;
+    transform: scaleX(-1) rotate(-15deg);
+    z-index: 5;
+    opacity: 0.9;
+    pointer-events: none;
+
+}

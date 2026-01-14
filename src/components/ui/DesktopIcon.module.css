@@ -1,0 +1,65 @@
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    /* Transparent background like desktop icons */
+    border: 1px dotted transparent;
+    /* Invisible border until hover */
+    cursor: var(--custom-pointer);
+    padding: 15px;
+    width: 120px;
+    /* Fixed width for alignment */
+    transition: all 0.1s;
+}
+
+.iconContainer:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Slight highlight on hover */
+    border: 1px dotted white;
+}
+
+.iconContainer:active {
+    opacity: 0.8;
+}
+
+.iconWrapper {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: pixelated;
+    /* Essential for that retro look */
+}
+
+.placeholderIcon {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    border: 2px solid black;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.label {
+    font-family: 'VT323', monospace;
+    /* Use the pixel font if available, or fallbacks */
+    font-size: 1.1rem;
+    color: black;
+    /* Or white with shadow if on dark background */
+    text-shadow: 1px 1px 0 #fff;
+    /* White outline for readability */
+    text-align: center;
+    line-height: 1.1;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent background for text */
+    padding: 0 4px;
+    border-radius: 2px;
+}

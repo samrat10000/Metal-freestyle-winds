@@ -1,0 +1,84 @@
+.tripContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    /* transition: background-image 0.8s; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.controls {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modeLabel {
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    text-shadow: 0 0 10px #b450ff;
+    margin-right: 15px;
+}
+
+.controls button {
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    padding: 10px 20px;
+    font-family: 'courier new', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+
+}
+
+.controls button:hover {
+    background: #00ff00;
+    color: #000;
+    box-shadow: 0 0 20px #00ff00;
+    /* transform: scale(1.1);  */
+
+
+}
+
+.controls button:last-child {
+    border-color: #ff0055;
+    color: #ff0055;
+    box-shadow: 0 0 10px rgba(255, 0, 85, 0.2);
+}
+
+.controls button:last-child:hover {
+    background: #ff0055;
+    /* Fill with Red */
+    color: #fff;
+    /* White Text */
+    box-shadow: 0 0 20px #ff0055;
+    /* INTENSE RED GLOW */
+}
+
+.playerWrapper {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 2px solid #8e7cc3;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 50px rgba(142, 124, 195, 0.3);
+    transform: scale(1.2);
+}

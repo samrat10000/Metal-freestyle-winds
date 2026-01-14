@@ -1,0 +1,64 @@
+/* Main Window Container */
+.window {
+  border: 2px solid #8e7cc3;
+  /* Lavender border */
+  background: #fdf0ff;
+  /* Light pink/lavender bg */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 4px 0px rgba(142, 124, 195, 0.4);
+  margin-bottom: 2rem;
+  height: auto;
+  min-height: 100px;
+  max-width: 100%;
+}
+
+/* Title Bar */
+.titleBar {
+  background: #8e7cc3;
+  color: white;
+  padding: 4px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem;
+  user-select: none;
+  height: 28px;
+}
+
+/* Controls Container */
+.controls {
+  display: flex;
+  gap: 4px;
+}
+
+/* Pixel Buttons (Min, Max, Close) */
+.controlBtn {
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  line-height: 1;
+  padding: 4px;
+  /* Increases hit area */
+}
+
+.controlBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.content {
+  padding: 1rem;
+  overflow-y: auto;
+  flex-grow: 1;
+  font-family: 'Times New Roman', serif;
+  /* Retro feel */
+}
