@@ -17,7 +17,7 @@ def download_music():
         playlist = json.load(f)
 
     # Ensure download directory exists
-    output_dir = 'src/assets/songs'
+    output_dir = 'public/songs'
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
@@ -47,7 +47,7 @@ def download_music():
             # Update src in json to match what we are downloading
             # (Though we already set this manually in the JSON file)
             expected_filename = f"{title}.mp3"
-            song['src'] = f"/src/assets/songs/{expected_filename}"
+            song['src'] = f"/songs/{expected_filename}"
 
             print(f"\nDownloading: {title}...")
             try:

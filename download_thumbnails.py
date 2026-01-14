@@ -9,7 +9,7 @@ def download_thumbnails():
         playlist = json.load(f)
 
     # Ensure thumbnail directory exists
-    output_dir = 'src/assets/thumbnails'
+    output_dir = 'public/thumbnails'
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
@@ -52,7 +52,7 @@ def download_thumbnails():
                 urllib.request.urlretrieve(fallback_url, output_path)
             
             # Update JSON
-            song['albumArt'] = f"/src/assets/thumbnails/{safe_title}.jpg"
+            song['albumArt'] = f"/thumbnails/{safe_title}.jpg"
             print(f"✓ Downloaded: {title}")
             
         except Exception as e:

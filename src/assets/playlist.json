@@ -3,99 +3,99 @@
     "id": 1,
     "artist": "MysticPitch31",
     "title": "Oh Celeste",
-    "src": "/src/assets/songs/d4vd - Oh Celeste (Official Video).mp3",
+    "src": "/songs/d4vd - Oh Celeste (Official Video).mp3",
     "url": "https://www.youtube.com/watch?v=6skasx2gYwM",
-    "albumArt": "/src/assets/thumbnails/Oh Celeste.jpg",
+    "albumArt": "/thumbnails/Oh Celeste.jpg",
     "duration": null
   },
   {
     "id": 2,
     "artist": "TSS",
     "title": "Ending Scene",
-    "src": "/src/assets/songs/TSS - Ending Scene (Official Visualizer).mp3",
+    "src": "/songs/TSS - Ending Scene (Official Visualizer).mp3",
     "url": "https://www.youtube.com/watch?v=x3Hy0448OK0",
-    "albumArt": "/src/assets/thumbnails/Ending Scene.jpg",
+    "albumArt": "/thumbnails/Ending Scene.jpg",
     "duration": "4:01"
   },
   {
     "id": 3,
     "artist": "Maya Hawke",
     "title": "Missing Out",
-    "src": "/src/assets/songs/Maya Hawke - Missing Out (Official Lyric Video).mp3",
+    "src": "/songs/Maya Hawke - Missing Out (Official Lyric Video).mp3",
     "url": "https://www.youtube.com/watch?v=km-Egy3WTyM",
-    "albumArt": "/src/assets/thumbnails/Missing Out.jpg",
+    "albumArt": "/thumbnails/Missing Out.jpg",
     "duration": "3:37"
   },
   {
     "id": 4,
     "artist": "Stephen Sanchez",
     "title": "Be More",
-    "src": "/src/assets/songs/Stephen Sanchez - Be More (Lyrics).mp3",
+    "src": "/songs/Stephen Sanchez - Be More (Lyrics).mp3",
     "url": "https://www.youtube.com/watch?v=gPz_6hInzWQ",
-    "albumArt": "/src/assets/thumbnails/Be More.jpg",
+    "albumArt": "/thumbnails/Be More.jpg",
     "duration": "3:51"
   },
   {
     "id": 5,
     "artist": "Stephen Sanchez",
     "title": "The Pool",
-    "src": "/src/assets/songs/Stephen Sanchez - ＂The Pool＂ (Official Audio).mp3",
+    "src": "/songs/Stephen Sanchez - ＂The Pool＂ (Official Audio).mp3",
     "url": "https://www.youtube.com/watch?v=xx-Xqmmzlk4",
-    "albumArt": "/src/assets/thumbnails/The Pool.jpg",
+    "albumArt": "/thumbnails/The Pool.jpg",
     "duration": null
   },
   {
     "id": 6,
     "artist": "DEVILISH",
     "title": "DEVILISH",
-    "src": "/src/assets/songs/DEVILISH.mp3",
+    "src": "/songs/DEVILISH.mp3",
     "url": "https://www.youtube.com/watch?v=DdzF7AT8Lds",
-    "albumArt": "/src/assets/thumbnails/DEVILISH.jpg",
+    "albumArt": "/thumbnails/DEVILISH.jpg",
     "duration": null
   },
   {
     "id": 7,
     "artist": "Chase Atlantic",
     "title": "Heaven and Back",
-    "src": "/src/assets/songs/Chase Atlantic - HEAVEN AND BACK (Official Music Video).mp3",
+    "src": "/songs/Chase Atlantic - HEAVEN AND BACK (Official Music Video).mp3",
     "url": "https://www.youtube.com/watch?v=ZFiWQodimPA",
-    "albumArt": "/src/assets/thumbnails/Heaven and Back.jpg",
+    "albumArt": "/thumbnails/Heaven and Back.jpg",
     "duration": "4:08"
   },
   {
     "id": 8,
     "artist": "Djo",
     "title": "End Of Beginning",
-    "src": "/src/assets/songs/Djo - End Of Beginning (Lyrics).mp3",
+    "src": "/songs/Djo - End Of Beginning (Lyrics).mp3",
     "url": "https://www.youtube.com/watch?v=B3Z4XGAxJB0",
-    "albumArt": "/src/assets/thumbnails/End Of Beginning.jpg",
+    "albumArt": "/thumbnails/End Of Beginning.jpg",
     "duration": "2:39"
   },
   {
     "id": 9,
     "artist": "New West",
     "title": "Those Eyes",
-    "src": "/src/assets/songs/New West - Those Eyes (Lyrics).mp3",
+    "src": "/songs/New West - Those Eyes (Lyrics).mp3",
     "url": "https://www.youtube.com/watch?v=_-YjO6KfEMk",
-    "albumArt": "/src/assets/thumbnails/Those Eyes.jpg",
+    "albumArt": "/thumbnails/Those Eyes.jpg",
     "duration": null
   },
   {
     "id": 10,
     "artist": "Just A Boy",
     "title": "Just A Boy",
-    "src": "/src/assets/songs/Just A Boy - Japanese Rap [Full Song] Gachiakuta Anime.mp3",
+    "src": "/songs/Just A Boy - Japanese Rap [Full Song] Gachiakuta Anime.mp3",
     "url": "https://www.youtube.com/watch?v=72DMrkE8jks",
-    "albumArt": "/src/assets/thumbnails/Just A Boy.jpg",
+    "albumArt": "/thumbnails/Just A Boy.jpg",
     "duration": null
   },
   {
     "id": 11,
     "artist": "Gracie Abrams",
     "title": "Risk",
-    "src": "/src/assets/songs/Gracie Abrams – Risk (Lyrics).mp3",
+    "src": "/songs/Gracie Abrams – Risk (Lyrics).mp3",
     "url": "https://www.youtube.com/watch?v=ihHp77st2Vc",
-    "albumArt": "/src/assets/thumbnails/Risk.jpg",
+    "albumArt": "/thumbnails/Risk.jpg",
     "duration": "3:11"
   }
 ]
