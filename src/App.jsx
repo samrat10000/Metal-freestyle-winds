@@ -106,7 +106,7 @@ function App() {
 
                                     <div className={styles.soulRow}>
                                         <span>ARCHETYPE:</span>
-                                        <span style={{ color: '#ccc' }}>Digital Hermit</span>
+                                        <span className={styles.soulValueGrey}>Digital Hermit</span>
                                     </div>
 
                                     <div className={styles.soulRow}>
@@ -116,12 +116,12 @@ function App() {
 
                                     <div className={styles.soulRow}>
                                         <span>MEDIUM:</span>
-                                        <span style={{ color: '#8e7cc3' }}>Code & Shadows</span>
+                                        <span className={styles.soulValueLavender}>Code & Shadows</span>
                                     </div>
 
                                     <div className={styles.soulRow}>
                                         <span>SANCTUARY:</span>
-                                        <span style={{ color: '#fff', fontStyle: 'italic' }}>freestylewinds</span>
+                                        <span className={styles.soulValueSanctuary}>Freestyle Winds</span>
                                     </div>
 
                                     <div className={styles.soulIcons}>

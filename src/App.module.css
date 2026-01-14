@@ -120,55 +120,92 @@
 
 /* css for home */
 
-.homeContent{
-    padding:5px;
+.homeContent {
+    padding: 5px;
 
 }
-.homeIntro{
+
+.homeIntro {
     margin-bottom: 15px;
-    line-height:1.5;
-    font-size:0.95rem;
+    line-height: 1.5;
+    font-size: 0.95rem;
 }
 
-.soulSignature{
+.soulSignature {
     border: 1px solid #8e7cc3;
     background: #1a1626;
     padding: 10px;
     text-align: center;
     font-family: 'Courier New', monospace;
-    font-size:0.85rem;
-      /* box-shadow: 3px 3px 0 rgba(142, 124, 195, 0.2); */
+    font-size: 0.85rem;
+    /* box-shadow: 3px 3px 0 rgba(142, 124, 195, 0.2); */
 
-    
-    
-}
 
-.soulTitle{
-    color:#8e7cc3;
-    letter-spacing: 1px;
-}
-
-.soulDivider{
-    border:none;
-    border-bottom:1px dashed #444;
-    margin:8px 0;
 
 }
 
-.soulRow{
-    display:flex;
+.soulTitle {
+    /* color: #8e7cc3; */
+    color: #E0D0FF;
+    /* Very light lavender */
+    letter-spacing: 3px;
+    text-shadow: 0 0 8px rgba(180, 80, 255, 0.6);
+    /* Purple NEON GLOW */
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.soulDivider {
+    border: none;
+    border-bottom: 1px dashed #444;
+    margin: 8px 0;
+
+}
+
+.soulRow {
+    display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
 }
 
-.soulValuePurp{
-    color:#b450ff;
+.soulValuePurp {
+    color: #b450ff;
 }
-.soulValueGreen{
-    color:#0f0;
+
+.soulValueGreen {
+    color: #0f0;
 }
+
 .soulIcons {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    letter-spacing: 5px;
+    margin-top: 15px;
+    font-size: 1.4rem;
+    color: #4a4a4a;
+    text-shadow: 0 0 2px #8e7cc3;
+    /* Dark grey base */
+    letter-spacing: 7px;
+    /* transition: color 0.3s ease; */
+
+
+
+}
+
+.soulIcons:hover {
+    color: #fff;
+    /* Light up on hover! */
+    text-shadow: 0 0 10px #fff;
+    cursor: default;
+}
+
+.soulValueGrey {
+    color: #ccc;
+}
+
+.soulValueLavender {
+    color: #8e7cc3;
+}
+
+.soulValueSanctuary {
+    color: #fff;
+    /* font-style: italic; */
 }
