@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
@@ -6,11 +6,18 @@ import DesktopGrid from './components/layout/DesktopGrid';
 import WindowFrame from './components/ui/WindowFrame';
 import Notebook from './features/notebook/Notebook';
 import MusicPlayer from './features/music/MusicPlayer';
+import WelcomeScreen from './components/ui/WelcomeScreen'; // Import the new screen
 import styles from './App.module.css';
 import pfpImage from './assets/thenixsam/thenixsam_main.png';
 import Sitemap from './features/sitemap/Sitemap';
 
 function App() {
+    const [hasEntered, setHasEntered] = useState(false);
+
+    if (!hasEntered) {
+        return <WelcomeScreen onEnter={() => setHasEntered(true)} />;
+    }
+
     return (
         <Routes>
             <Route path="/" element={

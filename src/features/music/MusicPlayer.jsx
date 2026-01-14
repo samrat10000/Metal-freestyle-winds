@@ -60,6 +60,26 @@ const MusicPlayer = () => {
         }
     }, [currentTrackIndex]);
 
+    // Autoplay when component mounts
+    useEffect(() => {
+        const attemptAutoplay = async () => {
+            if (audioRef.current) {
+                try {
+                    await audioRef.current.play();
+                    setIsPlaying(true);
+                } catch (error) {
+                    console.log("Autoplay blocked by browser - user must interact first:", error);
+                    // Autoplay blocked - user will need to click play manually
+                }
+            }
+        };
+
+        // Small delay to ensure audio element is ready
+        const timer = setTimeout(attemptAutoplay, 500);
+        return () => clearTimeout(timer);
+    }, []); // Empty dependency array = run once on mount
+
+
     const togglePlay = () => {
         if (!audioRef.current) return;
         if (isPlaying) {
