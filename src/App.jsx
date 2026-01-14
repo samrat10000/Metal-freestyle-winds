@@ -27,12 +27,26 @@ function App() {
                         <WindowFrame title="Bio">
                             <div className={styles.bioContent}>
                                 {<img src={pfpImage} alt="..." className={styles.pfp} />}
-                                <p><strong>Samrat</strong> | he/him | ☯︎</p>
-                                <p>MERN Stack Dev | India 🇮🇳</p>
-                                <p>Digital Archaeologist | Heart and Soul of a 90s Kid</p>
-                                <hr style={{ border: '1px dotted #8e7cc3', margin: '10px 0' }} />
-                                <p><i>"Born to fight zombies, currently fighting the corporate machine.I Stay awake at night building this to feel alive."</i></p>
-                                <p>Future Apocalypse Survivor. </p>
+
+                                <p className={styles.bioName}>
+                                    <strong>Samrat</strong> <span>| he/him | ☯︎</span>
+                                </p>
+
+                                <div className={styles.bioRoles}>
+                                    <p>MERN Stack Dev 🇮🇳</p>
+                                    <p>Digital Architect</p>
+                                </div>
+
+                                <hr className={styles.bioDivider} />
+
+                                <p className={styles.bioManifesto}>
+                                    "The internet got too loud, so I built a quiet room.
+                                    Coding to heal. Designing to feel alive."
+                                </p>
+
+                                <div className={styles.bioStatus}>
+                                    <p>STATUS: <span>REFILLING HP...</span></p>
+                                </div>
                             </div>
                         </WindowFrame>
 
@@ -71,8 +85,50 @@ function App() {
                         <MusicPlayer />
 
                         <WindowFrame title="Home">
-                            <p>Hello, welcome to my digital room.</p>
-                            <p>I'm building this to feel alive.</p>
+                            <div className={styles.homeContent}>
+                                <p className={styles.homeIntro}>
+                                    <strong>Hello, traveler.</strong>
+                                    <br /><br />
+                                    I am Samrat. This digital room is my <i>external hard drive</i>.
+                                    <br />
+                                    Most coders build for efficiency. I build for <strong>feeling</strong>.
+                                    Everything here—the music, the colors, the bugs—is a piece of my mind.
+                                </p>
+
+                                <div className={styles.soulSignature}>
+                                    <span className={styles.soulTitle}> SOUL SIGNATURE </span>
+                                    <hr className={styles.soulDivider} />
+
+                                    <div className={styles.soulRow}>
+                                        <span>AURA:</span>
+                                        <span className={styles.soulValuePurp}>Lavender Glitch</span>
+                                    </div>
+
+                                    <div className={styles.soulRow}>
+                                        <span>ARCHETYPE:</span>
+                                        <span style={{ color: '#ccc' }}>Digital Hermit</span>
+                                    </div>
+
+                                    <div className={styles.soulRow}>
+                                        <span>OBJECTIVE:</span>
+                                        <span className={styles.soulValueGreen}>Transcend 1.0</span>
+                                    </div>
+
+                                    <div className={styles.soulRow}>
+                                        <span>MEDIUM:</span>
+                                        <span style={{ color: '#8e7cc3' }}>Code & Shadows</span>
+                                    </div>
+
+                                    <div className={styles.soulRow}>
+                                        <span>SANCTUARY:</span>
+                                        <span style={{ color: '#fff', fontStyle: 'italic' }}>freestylewinds</span>
+                                    </div>
+
+                                    <div className={styles.soulIcons}>
+                                        ⛧ ♰ ⛧
+                                    </div>
+                                </div>
+                            </div>
                         </WindowFrame>
                     </div>
 
