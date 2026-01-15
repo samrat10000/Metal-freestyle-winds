@@ -15,7 +15,9 @@ const Notebook = () => {
 
         "Jan 12 — Also today <3 Created my anime-style character — kinda how I imagine myself. I actually really like him, so I added him as my avatar.",
 
-        "Jan 13 — Today :P Started working on trip mode. Still experimenting, but yeah… this is where things start getting trippy."
+        "Jan 13 — Today :P Started working on trip mode. Still experimenting, but yeah… this is where things start getting trippy.",
+
+        "Jan 16 — Today ⛧ Built the contact page. Wanted a quiet place where people could leave something behind — words, thoughts, feelings. Made it gothic, soft, a little broken… but honest."
     ]);
 
 
