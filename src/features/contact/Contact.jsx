@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import styles from "./contact.module.css";
+import styles from "./Contact.module.css";
 import butterflyImg from "../../assets/contact_page_thiings/purple_butterfly.png";
 import skullImg from "../../assets/contact_page_thiings/skull_art_for_contact.png";
 import gothicCrossImg from "../../assets/contact_page_thiings/gothic_cross.png";
