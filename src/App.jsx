@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-
+import Contact from './features/contact/Contact';
 import DesktopGrid from './components/layout/DesktopGrid';
 import WindowFrame from './components/ui/WindowFrame';
 import Notebook from './features/notebook/Notebook';
@@ -79,6 +79,7 @@ function App() {
                                 <button className={styles.linkButton}>lab</button>
                                 <button className={styles.linkButton}>guestbook</button>
                                 <button className={styles.linkButton}>questions</button>
+                                <NavLink to="/contact" className={styles.linkButton}>contact</NavLink>
                             </div>
                         </WindowFrame>
 
@@ -149,6 +150,7 @@ function App() {
 
 
             <Route path="/sitemap" element={<Sitemap />} />
+            <Route path="/contact" element={<Contact />} />
         </Routes>
     );
 }
