@@ -10,6 +10,9 @@ import WelcomeScreen from './components/ui/WelcomeScreen'; // Import the new scr
 import styles from './App.module.css';
 import pfpImage from './assets/thenixsam/thenixsam_main.png';
 import Sitemap from './features/sitemap/Sitemap';
+import Personal from './features/personal/Personal';
+import Diary from './features/personal/components/Diary';
+import MyLikes from './features/personal/components/MyLikes';
 
 function App() {
     const [hasEntered, setHasEntered] = useState(false);
@@ -68,7 +71,7 @@ function App() {
                                 <NavLink to="/sitemap" className={styles.linkButton}>sitemap</NavLink>
                                 <button className={styles.linkButton}>projects</button>
                                 <button className={styles.linkButton}>shrines</button>
-                                <button className={styles.linkButton}>personal</button>
+                                <NavLink to="/personal" className={styles.linkButton}>personal</NavLink>
                                 <button className={styles.linkButton}>now</button>
                                 <button className={styles.linkButton}>notebook</button>
                                 <button className={styles.linkButton}>moodboard</button>
@@ -151,6 +154,9 @@ function App() {
 
             <Route path="/sitemap" element={<Sitemap />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/personal" element={<Personal />} />
+            <Route path="/personal/diary" element={<Diary/>}/>
+            <Route path="/personal/mylikes" element={<MyLikes />} />
         </Routes>
     );
 }

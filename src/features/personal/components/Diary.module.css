@@ -1,0 +1,239 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #050505; */
+    color: #aeaeae;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    z-index: 9999;
+}
+
+/* Custom Scrollbar for the container */
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #333;
+}
+
+.paper {
+    width: 100%;
+    max-width: 700px;
+    padding: 80px 20px;
+    /* Top padding pushes content down */
+    min-height: 100vh;
+}
+
+.header {
+    border-bottom: 1px solid #333;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+    color: #e0d8ff;
+}
+
+.status {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+.entry {
+    margin-bottom: 50px;
+    animation: fadeIn 0.5s ease;
+}
+
+.meta {
+    font-size: 0.85rem;
+    color: #8e7cc3;
+    /* Lavender tint for dates */
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Diary flow container */
+.diaryFlow {
+    position: relative;
+    width: 100%;
+}
+
+/* Text stays centered and is the main focus */
+.text {
+    line-height: 1.6;
+    font-size: 1.05rem;
+    white-space: pre-line;
+    color: #e0d8ff;
+    margin: 0 0 2rem 0;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 8px rgba(168, 85, 247, 0.4);
+    position: relative;
+    z-index: 1;
+}
+
+/* Memory wrapper - ONLY for positioning */
+.memoryWrapper {
+    position: absolute;
+    width: 250px;
+    z-index: 2;
+}
+
+/* Left side positioning */
+.memoryLeft {
+    left: -280px;
+    /* transform: rotate(-3deg); */
+}
+
+/* Right side positioning */
+.memoryRight {
+    right: -280px;
+    /* transform: rotate(2.5deg); */
+}
+
+/* Polaroid frame */
+.polaroid {
+
+    background-color: #eee7d8;
+    /* border: #000 solid 20px dashed; */
+    /* aged polaroid paper */
+    padding: 15px 15px 52px 15px;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); */
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.35),
+        inset 0 0 2px rgba(0, 0, 0, 0.15);
+    position: relative;
+    border-radius: 2px;
+    padding-bottom: 58px;
+    opacity: 0.55;
+
+}
+.polaroid::marker {
+    font-family: 'Courier New', monospace;
+}
+
+.polaroid::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        repeating-linear-gradient(0deg,
+            rgba(0, 0, 0, 0.015),
+            rgba(0, 0, 0, 0.015) 1px,
+            transparent 1px,
+            transparent 3px);
+    pointer-events: none;
+}
+.polaroid::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow:
+        inset 0 0 15px rgba(0, 0, 0, 0.08),
+        inset 0 0 3px rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* filter: grayscale(19%) contrast(105%) brightness(75%);
+     */
+    filter:
+        sepia(12%) grayscale(10%) contrast(95%) brightness(85%) saturate(90%);
+}
+
+
+
+/* On smaller screens, stack images vertically */
+@media (max-width: 1200px) {
+
+    .memoryLeft,
+    .memoryRight {
+        position: static;
+        width: 100%;
+        max-width: 300px;
+        margin: 30px auto;
+        transform: rotate(0deg);
+    }
+}
+
+
+
+.divider {
+    color: #333;
+    margin-top: 30px;
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+.divider::after {
+    content: "___◄";
+    font-size: 35px;
+    display: inline-block;
+    margin-left: 10px;
+    animation: blink 1s step-end infinite;
+    color: #a855f7;
+}
+
+.backBtn {
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #666;
+    text-decoration: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    /* transition: color 0.2s; */
+}
+
+.backBtn:hover {
+    color: #fff;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+::selection {
+    background: #a855f7;
+    /* Purple background */
+    color: #000;
+    /* Black text */
+}
